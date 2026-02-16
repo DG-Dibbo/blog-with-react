@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Mastering React for Modern Web Apps",
+    "description": "React makes building interactive UIs simple and scalable. In this blog, we explore hooks, components, and best practices.",
+    "postedDate": "2026-02-01",
+    "readingTime": "6 min read",
+    "authorName": "Asif Hossain",
+    "authorProfile": "https://i.pravatar.cc/300?img=12",
+    "authorThumbnail": "https://media.licdn.com/dms/image/v2/D4D12AQGNAMxVvFMF-w/article-cover_image-shrink_720_1280/B4DZWUNI1ZGcAI-/0/1741948227506?e=2147483647&v=beta&t=KZk5lEfb6uS7Gyy73d52XkdWuK3bh633132Niqd-C2U"
+  },
+  {
+    "id": 2,
+    "title": "Understanding JavaScript Closures",
+    "description": "Closures are one of the most powerful concepts in JavaScript. Learn how they work and where to use them effectively.",
+    "postedDate": "2026-02-02",
+    "readingTime": "5 min read",
+    "authorName": "Nusrat Jahan",
+    "authorProfile": "https://i.pravatar.cc/300?img=32",
+    "authorThumbnail": "https://miro.medium.com/1*DVg019JWfVcWWZgyoOb59g.png"
+  },
+  {
+    "id": 3,
+    "title": "Tailwind CSS for Beginners",
+    "description": "Tailwind CSS helps you build modern designs quickly using utility-first classes. Let's explore its core features.",
+    "postedDate": "2026-02-03",
+    "readingTime": "4 min read",
+    "authorName": "Arisa",
+    "authorProfile": "https://i.pravatar.cc/300?img=45",
+    "authorThumbnail": "https://www.sarvika.com/wp-content/uploads/2023/12/Tailwind-Streamlining-Design-and-Development-beyond-traditional-CSS-jpg-1024x538.webp"
+  },
+  {
+    "id": 4,
+    "title": "Building REST APIs with Node.js",
+    "description": "Learn how to build scalable REST APIs using Node.js and Express with proper folder structure.",
+    "postedDate": "2026-02-04",
+    "readingTime": "7 min read",
+    "authorName": "Tanvir Hossain",
+    "authorProfile": "https://i.pravatar.cc/300?img=22",
+    "authorThumbnail": "https://media.geeksforgeeks.org/wp-content/uploads/20230825182818/How-to-Build-a-Social-Media-REST-API-Using-Nodejs.png"
+  },
+  {
+    "id": 5,
+    "title": "How to Stay Focused While Studying",
+    "description": "Distractions can slow down productivity. Discover practical techniques to improve concentration and memory retention.",
+    "postedDate": "2026-02-05",
+    "readingTime": "3 min read",
+    "authorName": "Sadia Islam",
+    "authorProfile": "https://i.pravatar.cc/300?img=28",
+    "authorThumbnail": "https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/08/how-to-stay-concentrated-while-studying.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Introduction to Machine Learning",
+    "description": "Machine Learning enables systems to learn from data. This beginner guide explains core concepts in simple terms.",
+    "postedDate": "2026-02-06",
+    "readingTime": "8 min read",
+    "authorName": "Hasib Khan",
+    "authorProfile": "https://i.pravatar.cc/300?img=18",
+    "authorThumbnail": "https://www.ed2go.com/common/images/2/22575.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Firebase Authentication Setup Guide",
+    "description": "Step-by-step guide to implement login, signup, and password reset using Firebase Authentication.",
+    "postedDate": "2026-02-07",
+    "readingTime": "6 min read",
+    "authorName": "Lamia Rahman",
+    "authorProfile": "https://i.pravatar.cc/300?img=36",
+    "authorThumbnail": "https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/10273532/og_image/optimized/0821-RoleBasedAuthFirebase-Luke_Social-0ec228e955294dc10aca08ce13328e4d.png"
+  },
+  {
+    "id": 8,
+    "title": "Responsive Design Best Practices",
+    "description": "Learn how to build responsive layouts using Flexbox, Grid, and modern CSS techniques.",
+    "postedDate": "2026-02-08",
+    "readingTime": "5 min read",
+    "authorName": "Farhan Chowdhury",
+    "authorProfile": "https://i.pravatar.cc/300?img=15",
+    "authorThumbnail": "https://visualedge.ro/wp-content/uploads/2023/12/Responsive-Design-in-the-Era-of-Smart-Devices-Best-Practices-and-Strategies.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Deploying React Apps Easily",
+    "description": "A complete guide to deploying your React applications on platforms like Vercel and Netlify.",
+    "postedDate": "2026-02-09",
+    "readingTime": "4 min read",
+    "authorName": "Mim Akter",
+    "authorProfile": "https://i.pravatar.cc/300?img=9",
+    "authorThumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp941Veta7AqckRClBK6KPlKFCMC7HF5FlGw&s"
+  },
+  {
+    "id": 10,
+    "title": "Clean Code Principles for Developers",
+    "description": "Writing clean code improves readability and maintainability. Explore essential coding principles.",
+    "postedDate": "2026-02-10",
+    "readingTime": "6 min read",
+    "authorName": "Jui islam",
+    "authorProfile": "https://i.pravatar.cc/300?img=40",
+    "authorThumbnail": "https://miro.medium.com/1*HhFN_kAjFZUjy7HqCispeg.png"
+  }
+]

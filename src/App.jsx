@@ -1,0 +1,71 @@
+import { useState } from 'react'
+import './App.css'
+import Blogs from './components/Blogs/Blogs'
+import Navbar from './components/Navbar/Navbar'
+
+function App() {
+  const [bookMark, setBookMark] = useState([])
+  const [AsreadingTime,setAsreadingTime] = useState(0)
+  // Handle BookMark
+  const handleBookMark = (blog) => {
+
+    setBookMark([...bookMark, blog])
+    setAsreadingTime(prev => prev + parseInt(blog.readingTime))
+  }
+
+  // Handle as read
+  const handleAsRead = (readMark) => {
+    const remainingAsRead = bookMark.filter((mark) => mark.id !== readMark.id)
+    setBookMark(remainingAsRead)
+    setAsreadingTime(prev => {
+      const updatedTime = prev - parseInt(readMark.readingTime)
+      return updatedTime > 0 ? updatedTime : 0
+    })
+  }
+  
+  
+  return (
+    <>
+      <Navbar></Navbar>
+      {/* Main container */}
+      <div className="container main-container grid grid-cols-1 lg:grid-cols-12 gap-12 mx-auto lg:px-40 md:px-20 px-6">
+
+        {/* left-content */}
+        <div className="left-content lg:col-span-8 lg:ml-3 md:ml-3">
+          <h2>Left Content</h2>
+          <Blogs handleBookMark={handleBookMark}></Blogs>
+        </div>
+        {/* right content */}
+        <div className="right-content lg:col-span-4 text-center">
+          <div className='flex justify-between'>
+            {
+              AsreadingTime > 0 && (
+                <h3 className='font-medium'>Reading-Time -{AsreadingTime}min on read</h3>
+              )
+            }
+            <p className='font-medium'>Bookmarked - {bookMark.length} </p>
+          </div>
+          <div className='mt-4'>
+            {
+              bookMark.map(mark => (
+                <div key={mark.id} className="card bg-base-100 card-xs shadow-sm">
+                  <div className="card-body flex flex-col justify-start">
+                    <h2 className="card-title font-extrabold">{mark.authorName}</h2>
+                    <h2 className='font-bold text-start'>{mark.title}</h2>
+                    <p className='text-start'>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                    <div className="justify-end card-actions">
+                      <button onClick={() => handleAsRead(mark)} className="btn btn-primary">As Read</button>
+                    </div>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+      </div>
+    </>
+  )
+}
+
+export default App
