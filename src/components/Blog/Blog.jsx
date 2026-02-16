@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaBookmark } from "react-icons/fa";
 import { FaBook } from "react-icons/fa6";
-const Blog = ({ blog, handleBookMark }) => {
+const Blog = ({ blog, handleBookMark,isBookMarked }) => {
     const { authorName, authorProfile, authorThumbnail, description, postedDate, readingTime, title } = blog
     return (
         <div>
@@ -23,7 +23,10 @@ const Blog = ({ blog, handleBookMark }) => {
                     <div className="card-body">
                         <h2 className="card-title">
                             {title}
-                            <div><button onClick={() => handleBookMark(blog)}><FaBookmark color="red" size={20} /></button></div>
+                            <div><button 
+                            onClick={() => handleBookMark(blog)}
+                            disabled = {isBookMarked}
+                            ><FaBookmark color={isBookMarked ? "white" : "red"} size={20} /></button></div>
                         </h2>
                         <p>Posted-Date: {postedDate} <br /> Reading-Time: {readingTime}</p>
                         <p>{description}</p>

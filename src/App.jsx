@@ -32,8 +32,7 @@ function App() {
 
         {/* left-content */}
         <div className="left-content lg:col-span-8 lg:ml-3 md:ml-3">
-          <h2>Left Content</h2>
-          <Blogs handleBookMark={handleBookMark}></Blogs>
+          <Blogs handleBookMark={handleBookMark} bookMark={bookMark}></Blogs>
         </div>
         {/* right content */}
         <div className="right-content lg:col-span-4 text-center">
