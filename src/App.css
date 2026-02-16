@@ -1,0 +1,28 @@
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Animated gradient border */
+.toast-gradient-border {
+  background: linear-gradient(270deg, #22c55e, #3b82f6, #a855f7, #facc15, #ec4899);
+  background-size: 600% 100%;
+  animation: gradientFlow 3s linear infinite;
+  padding: 2px; /* border thickness */
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Toast content */
+.toast-content {
+  background: white;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  white-space: nowrap; /* single line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* long text ellipsis */
+}

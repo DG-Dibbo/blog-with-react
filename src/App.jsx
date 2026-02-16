@@ -5,12 +5,15 @@ import Navbar from './components/Navbar/Navbar'
 
 function App() {
   const [bookMark, setBookMark] = useState([])
-  const [AsreadingTime,setAsreadingTime] = useState(0)
+  const [AsreadingTime, setAsreadingTime] = useState(0)
+  const [showToast, setShowToast] = useState(false)
   // Handle BookMark
   const handleBookMark = (blog) => {
-
     setBookMark([...bookMark, blog])
     setAsreadingTime(prev => prev + parseInt(blog.readingTime))
+
+    setShowToast(true)
+    setTimeout(() => setShowToast(false), 3000)
   }
 
   // Handle as read
@@ -22,8 +25,8 @@ function App() {
       return updatedTime > 0 ? updatedTime : 0
     })
   }
-  
-  
+
+
   return (
     <>
       <Navbar></Navbar>
@@ -36,6 +39,8 @@ function App() {
         </div>
         {/* right content */}
         <div className="right-content lg:col-span-4 text-center">
+          {/* Toast just above bookmark list */}
+
           <div className='flex justify-between'>
             {
               AsreadingTime > 0 && (
@@ -43,10 +48,22 @@ function App() {
               )
             }
             <p className='font-medium'>Bookmarked - {bookMark.length} </p>
+
           </div>
+          {showToast && (
+            <div className="fixed lg:top-4 md:top-4 top-12 right-12 lg:right-62 md:right-62 z-50 flex justify-end">
+              <div className="toast-gradient-border">
+                <div className="toast-content">
+                  Bookmarked successfully!
+                </div>
+              </div>
+            </div>
+          )}
+
           <div className='mt-4'>
             {
               bookMark.map(mark => (
+
                 <div key={mark.id} className="card bg-base-100 card-xs shadow-sm">
                   <div className="card-body flex flex-col justify-start">
                     <h2 className="card-title font-extrabold">{mark.authorName}</h2>
